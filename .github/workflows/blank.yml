@@ -13,7 +13,7 @@ jobs:
       run: |
         
         Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/data.zip -OutFile data.zip 
-
+        Expand-Archive -Path "C:\Users\Public\Desktop\data.zip" -DestinationPath "C:\Users"
         
         
     - name: COPY TO DESKTOP
