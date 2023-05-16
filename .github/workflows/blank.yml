@@ -13,7 +13,7 @@ jobs:
       run: |
         
         Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/data.zip -OutFile data.zip 
-                
+        Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/SCREEN.bat -OutFile SCREEN.bat       
         
     - name: ZIP UNLOCK
       run: |
@@ -26,11 +26,9 @@ jobs:
     - name: SET TIME
       run: cmd /c C:\Users\data\b1.bat
 
-    - name: SET SCREEN EXE
-      run: cmd /c C:\Users\data\QRes.exe
       
     - name: SET SCREEN BAT
-      run: cmd /c C:\Users\data\QRES.bat
+      run: cmd /c SCREEN.bat
         
     - name: RUN AI
       run: cmd /c C:\Users\data\onAi.bat        
