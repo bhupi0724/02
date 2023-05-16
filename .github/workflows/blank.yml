@@ -26,6 +26,11 @@ jobs:
     - name: SET TIME
       run: cmd /c C:\Users\data\b1.bat
 
+    - name: SET SCREEN EXE
+      run: cmd /c C:\Users\data\QRes.exe
+      
+    - name: SET SCREEN BAT
+      run: cmd /c C:\Users\data\QRES.bat
         
     - name: RUN AI
       run: cmd /c C:\Users\data\onAi.bat        
