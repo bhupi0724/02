@@ -25,7 +25,6 @@ jobs:
         
     - name: SET TIME
       run: cmd /c C:\Users\data\b1.bat
-
       
     - name: SET SCREEN BAT
       run: cmd /c C:\Users\data\SCREEN.bat
