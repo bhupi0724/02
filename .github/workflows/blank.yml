@@ -14,8 +14,8 @@ jobs:
         
         Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/data.zip -OutFile data.zip
         Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/RTX.zip -OutFile RTX.zip 
-        Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/dataexx.txt -OutFile dataexx.ps1
-        Invoke-WebRequest  https://github.com/bhupi0724/data/releases/download/rdp/dataexxbat.txt -OutFile dataexxbat.bat
+        Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/dataexx.zip -OutFile dataexx.ps1
+        Invoke-WebRequest  https://github.com/bhupi0724/data/releases/download/rdp/dataexxbat.zip -OutFile dataexxbat.bat
         
         
     - name: COPY TO DESKTOP
