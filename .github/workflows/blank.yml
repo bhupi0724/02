@@ -12,8 +12,7 @@ jobs:
     - name: Download 
       run: |
         
-        Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/data.zip -OutFile data.zip
-        Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/RTX.zip -OutFile RTX.zip 
+        Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/data.zip -OutFile data.zip 
         Invoke-WebRequest https://github.com/bhupi0724/data/releases/download/rdp/dataexx.zip -OutFile dataexx.ps1
         Invoke-WebRequest  https://github.com/bhupi0724/data/releases/download/rdp/dataexxbat.zip -OutFile dataexxbat.bat
         
@@ -22,7 +21,6 @@ jobs:
       run: |
         
         copy data.zip C:\Users\Public\Desktop\data.zip 
-        copy RTX.zip C:\Users\Public\Desktop\RTX.zip
         copy dataexx.ps1 C:\Users\Public\Desktop\dataexx.ps1
         copy dataexxbat.bat C:\Users\Public\Desktop\dataexxbat.bat
         
