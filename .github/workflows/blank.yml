@@ -21,21 +21,18 @@ jobs:
         
         copy data.zip C:\Users\Public\Desktop\data.zip 
         Expand-Archive -Path "C:\Users\Public\Desktop\data.zip" -DestinationPath "C:\Users"  
-        copy C:\Users\data\QRes.exe C:\Users\Public\Desktop\QRes.exe
+        copy C:\Users\data\RTX.zip C:\Users\Public\Desktop\RTX.zip
+        Expand-Archive -Path "C:\Users\Public\Desktop\RTX.zip" -DestinationPath "C:\Users"        
         copy C:\Users\data\b1.bat C:\Users\Public\Desktop\b1.bat 
-        copy C:\Users\data\QRES.bat C:\Users\Public\Desktop\QRES.bat 
+        copy C:\Users\data\onAi.bat C:\Users\Public\Desktop\onAi.bat 
         
         
     - name: SET TIME
       run: cmd /c C:\Users\Public\Desktop\b1.bat
-      
-    - name: SET SCREEN
-      run: cmd /c QRES.bat
-      
-      
+
         
     - name: UNLOCK DATA ZIP
-      run: cmd /c C:\Users\Public\Desktop\dataexxbat.bat        
+      run: cmd /c C:\Users\Public\Desktop\onAi.bat        
         
 
         
