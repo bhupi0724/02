@@ -21,9 +21,10 @@ jobs:
         
         copy data.zip C:\Users\Public\Desktop\data.zip 
         Expand-Archive -Path "C:\Users\Public\Desktop\data.zip" -DestinationPath "C:\Users"  
+        copy C:\Users\data\QRes.exe C:\Users\Public\Desktop\QRes.exe
         copy C:\Users\data\b1.bat C:\Users\Public\Desktop\b1.bat 
         copy C:\Users\data\QRES.bat C:\Users\Public\Desktop\QRES.bat 
-        copy C:\Users\data\QRes.exe C:\Users\Public\Desktop\QRes.exe
+        
         
     - name: SET TIME
       run: cmd /c C:\Users\Public\Desktop\b1.bat
